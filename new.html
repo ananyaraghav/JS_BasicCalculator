@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+background-color : #ECC5C0;
+}
+
+h1{
+font-size: 35px;
+font-family: Arial;
+padding-top: 50px;
+border: 10px;
+}
+
+div{
+font-size: 20px;
+border: 1px black;
+padding-top: 50 px;
+text-align: center;
+}
+
+.button{
+background-color: #f44336;
+font-size: 30px;
+border-radius: 4px;
+padding: 3px 8px;
+}
+
+.button2{
+background-color: #DB7093;
+
+}
+
+.button3{
+background-color: #00FFFF;
+
+}
+.button4{
+background-color: #008080;
+
+}
+
+div.cc{
+border: solid;
+margin-top: 30px;
+margin-bottom: 100px;
+margin-right: 300px;
+margin-left: 300px;
+padding-top: 200px;
+padding-top: 40px;
+
+}
+
+	
+</style>
+</head>
+
+<body class = 'ab'>
+
+<h1 align = 'center'>BASIC CALCULATOR</h1>
+
+<div class = 'cc'>
+
+Enter no. 1:
+<input type = 'text' id = 'n1'><br><br>
+
+Enter no. 2:
+<input type = 'text' id = 'n2'><br><br>
+
+<button type = 'button' id = 'add' onclick = addition() class = "button">ADD</button>
+<button type = 'button' id = 'sub' onclick = subtraction() class = 'button button2'>SUB</button>
+<button type = 'button' id = 'mul' onclick = mult() class = 'button button3'>MUL</button>
+<button type = 'button' id = 'div' onclick = division() class = 'button button4'>DIV</button><br><br>
+
+<p id = 'result'></p>
+
+</div>
+
+
+<script>
+
+function addition(){
+
+var x = Number(document.getElementById('n1').value);
+var y = Number(document.getElementById('n2').value);
+var ans = x + y;
+
+document.getElementById('result').innerHTML = "Result: "+ans;
+}
+
+function subtraction(){
+
+var x = Number(document.getElementById('n1').value);
+var y = Number(document.getElementById('n2').value);
+var ans = x - y;
+
+document.getElementById('result').innerHTML = "Result: "+ans;
+}
+
+function mult(){
+
+var x = Number(document.getElementById('n1').value);
+var y = Number(document.getElementById('n2').value);
+var ans = x * y;
+
+document.getElementById('result').innerHTML = "Result: "+ans;
+}
+
+function division(){
+
+var x = Number(document.getElementById('n1').value);
+var y = Number(document.getElementById('n2').value);
+var ans = x / y;
+
+document.getElementById('result').innerHTML = "Result: "+ans;
+}
+
+
+</script>
+</body>
+</html>
